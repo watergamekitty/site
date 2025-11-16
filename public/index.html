@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Pong — Play</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div id="overlay" class="overlay">
+      <div class="card">
+        <h1>Play Pong</h1>
+        <label for="name">Enter a username</label>
+        <input id="name" placeholder="username" maxlength="24" />
+        <button id="join">Play</button>
+        <p class="muted">No branding — just the game. Share this page link.</p>
+      </div>
+    </div>
+
+    <canvas id="screen"></canvas>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/client.js"></script>
+  </body>
+</html>
